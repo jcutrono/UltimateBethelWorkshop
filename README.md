@@ -31,3 +31,12 @@ Object oriented programming and testing
     dotnet new OOP-Console
     cd ..
     dotnet sln add .\OOP-Console\OOP-Console.csproj
+
+## Create a webapi project
+    dotnet new webapi --no-https
+    dotnet add package MongoDB.Driver --version 2.10.4
+
+## Create a test project
+    dotnet new xunit -o Covid.UnitTests
+    dotnet add reference ..\..\CovidWeb\CovidWeb.csproj
+    dotnet add package Moq
