@@ -8,6 +8,7 @@ namespace CovidWeb
     public interface ILocationData
     {
         IEnumerable<Location> Get();
+        IEnumerable<Location> Get(string state);
     }
 
     public class LocationData : DataAccess, ILocationData
@@ -20,6 +21,11 @@ namespace CovidWeb
         public IEnumerable<Location> Get()
         {
             return GetCollection<Location>().Find(_ => true).ToList();
+        }
+
+        public IEnumerable<Location> Get(string state)
+        {
+            return GetCollection<Location>().Find(x => x.State == state.ToUpper()).ToList();
         }
     }
 

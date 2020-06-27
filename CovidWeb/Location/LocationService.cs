@@ -5,6 +5,7 @@ namespace CovidWeb
     public interface ILocationService
     {
         IEnumerable<Location> Get();
+        IEnumerable<Location> Get(string state);
     }
     public class LocationService : ILocationService
     {
@@ -18,6 +19,11 @@ namespace CovidWeb
         public IEnumerable<Location> Get()
         {
             return _data.Get();
+        }
+
+        public IEnumerable<Location> Get(string state)
+        {
+            return _data.Get(state);
         }
     }
 }

@@ -23,5 +23,11 @@ namespace CovidWeb
         {
             return _locationService.Get();
         }
+
+        [HttpGet("{state}")]
+        public IEnumerable<Location> Get(string state)
+        {
+            return _locationService.Get(state);
+        }
     }
 }
