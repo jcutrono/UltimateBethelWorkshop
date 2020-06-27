@@ -16,7 +16,7 @@ Object oriented programming and testing
 * Optional (https://www.mongodb.com/products/vs-code)
 * https://git-scm.com/downloads
 
-## Clone the repository
+## Create the repository
 > Create your repo
 
 ## Create solution file
