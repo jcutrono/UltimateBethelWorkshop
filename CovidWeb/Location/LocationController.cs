@@ -19,7 +19,7 @@ namespace CovidWeb
         }
 
         [HttpGet]
-        public string Get()
+        public IEnumerable<Location> Get()
         {
             return _locationService.Get();
         }

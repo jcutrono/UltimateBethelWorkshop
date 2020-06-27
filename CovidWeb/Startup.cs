@@ -27,6 +27,7 @@ namespace CovidWeb
             services.AddControllers();
 
             services.AddScoped<ILocationService, LocationService>();
+            services.AddScoped<ILocationData, LocationData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

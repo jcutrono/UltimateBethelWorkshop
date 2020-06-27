@@ -1,18 +1,23 @@
+using System.Collections.Generic;
+
 namespace CovidWeb
 {
     public interface ILocationService
     {
-        string Get();
+        IEnumerable<Location> Get();
     }
     public class LocationService : ILocationService
     {
-        public LocationService()
+        private ILocationData _data;
+
+        public LocationService(ILocationData data)
         {
+            _data = data;
         }
 
-        public string Get()
+        public IEnumerable<Location> Get()
         {
-            return "hello";
+            return _data.Get();
         }
     }
 }
