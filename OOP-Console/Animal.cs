@@ -30,11 +30,29 @@ namespace OOP_Console
         }
     }
 
-    // public class Dog : Animal
-    // {
-    //     public Dog() : base("Dog")
-    //     {
+    public class Dog : Animal
+    {
+        public Dog() : base("Dog")
+        {
             
-    //     }
-    // }
+        }
+
+        public override string MakeSound()
+        {
+            return _name + " - Bark";
+        }
+    }
+
+    public class Fox : Animal
+    {
+        public Fox() : base("Fox")
+        {
+            
+        }
+
+        public override string MakeSound()
+        {
+            return _name + "Ring ding ding";
+        }
+    }
 }
