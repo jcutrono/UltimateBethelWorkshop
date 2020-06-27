@@ -1,4 +1,4 @@
-# UltimateBethelWorkshop
+# Ultimate Bethel Workshop
 Object oriented programming and testing
 
 ## Presetup
