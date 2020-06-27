@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace CovidWeb
@@ -23,6 +24,11 @@ namespace CovidWeb
 
         public IEnumerable<Location> Get(string state)
         {
+            if(state.Equals(string.Empty) || state.Length != 2)
+            {
+                throw new ArgumentException("State must be 2 characters and not blank", "state");
+            }
+
             return _data.Get(state);
         }
     }
