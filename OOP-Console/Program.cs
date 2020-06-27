@@ -7,18 +7,8 @@ namespace OOP_Console
     {
         static void Main(string[] args)
         {
-            var myclass = new MyClass();
-            var myclass2 = new MyClass2();
+            var cat = new Cat();
 
-            var list = new List<IMyClass>();
-            list.Add(myclass);
-            list.Add(myclass2);
-
-            foreach(var item in list)
-            {
-                Console.WriteLine(item.Foo());
-                Console.WriteLine(item.Bar());
-            }
         }
     }
 }
