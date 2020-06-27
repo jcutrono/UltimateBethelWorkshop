@@ -17,7 +17,7 @@ Object oriented programming and testing
 * https://git-scm.com/downloads
 
 ## Clone the repository
-    git clone git@github.com:jcutrono/UltimateBethelWorkshop.git
+> Create your repo
 
 ## Create solution file
     dotnet new sln -o Bethel
